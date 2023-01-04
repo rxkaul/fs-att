@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<auditControlFile version="1.0">
+        <audit name="Java Files" auditRuleSet="/CCI Main Code Audit Rule Set">
+                <inclusionSet>
+                        <inclusion pattern="/src/main/**/*.java"/>
+                </inclusionSet>
+                <exclusionSet>
+                        <exclusion pattern="/src/test/**/*.java"/>
+                </exclusionSet>
+        </audit>
+        <audit name="Java Test Files" auditRuleSet="/CCI Test Code Audit Rule Set">
+                <inclusionSet>
+                        <inclusion pattern="/src/test/**/*.java"/>
+                </inclusionSet>
+                <exclusionSet>
+                        <exclusion pattern="/src/main/**/*.java"/>
+                </exclusionSet>
+        </audit>
+</auditControlFile>
